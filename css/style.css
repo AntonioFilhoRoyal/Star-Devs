@@ -106,15 +106,14 @@ main .phrases-container button {
 }
 
 main .phrases-container button:hover {
-  border-radius: 2rem;
-  color: var(--yellow);
-  background-color: var(--white);
+  border-radius: 10px;
+  letter-spacing: 2px;
 }
 
 main .phrases-container p {
   text-align: center;
   width: 75%;
-  font-size: 2em;
+  font-size: 1.4em;
   font-weight: 700;
   margin-top: 4%;
 
