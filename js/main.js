@@ -1,3 +1,6 @@
+alert("Botão Frases disponivel");
+
+
 const persons = document.getElementById('persons');
 const starships = document.getElementById('starships');
 const planets = document.getElementById('planets');
@@ -28,14 +31,15 @@ function getData(param){
 
 function loadPhrases(){
     const btn = document.getElementById('btn-phrases');
-    const phrase = document.getElementById('phrase')
-    return fetch("http://swquotesapi.digitaljedi.dk/api/SWQuote/RandomStarWarsQuote")
+    const phrase = document.getElementById('phrases');
+
+    return fetch('https://swquotesapi.digitaljedi.dk/api/SWQuote/RandomStarWarsQuote')
         .then(data => data.json())
         .then(json => {
             btn.innerHTML = 'Ver mais';
-            phrase.innerHTML = `"${json.content}"`;
+            phrase.innerHTML = `"${json.content}"`            
         })
-        .catch(err => console.log(`Error:`, err));
+        .catch(err => console.log('Error: ', err));
 }
 
 
