@@ -37,7 +37,7 @@ function loadPhrases(){
         .then(data => data.json())
         .then(json => {
             btn.innerHTML = 'Ver mais';
-            phrase.innerHTML = `"${json.content}"`            
+            phrases.innerHTML = `"${json.content}"`            
         })
         .catch(err => console.log('Error: ', err));
 }
